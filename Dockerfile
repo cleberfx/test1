@@ -4,4 +4,4 @@ FROM gitpod/workspace-full:latest
 USER root
 
 
-RUN apt-get install git-flow
+RUN apt-get install -y git-flow
