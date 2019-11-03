@@ -1,7 +1,7 @@
 FROM gitpod/workspace-full:latest
 USER root
-RUN apt-get update -y \
- && apt-get install -y git-flow \
+RUN apt-get update \
+ && apt-get install -yq git-flow \
     
- && sudo rm -rf /var/lib/apt/lists/*
+ && apt-get clean && rm -rf /var/lib/apt/lists/* /tmp/*
 
