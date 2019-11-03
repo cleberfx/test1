@@ -5,11 +5,12 @@ USER root
 RUN apt-get update \
     # window manager
     && apt-get install -y jwm \
-    && apt-get install -y git-flow \
+   
     # electron
     && apt-get install -y libgtk-3-0 libnss3 libasound2 \
     # native-keymap
     && apt-get install -y libx11-dev libxkbfile-dev \
+    && apt-get install -y git-flow \
     && apt-get clean && rm -rf /var/cache/apt/* && rm -rf /var/lib/apt/lists/* && rm -rf /tmp/*
 
 USER gitpod
