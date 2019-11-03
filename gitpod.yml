@@ -1,4 +1,4 @@
 image:
-  file: .gitpod.dockerfile
+  file: Dockerfile
   
   command: npm install -g generator-jhipster	
