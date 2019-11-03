@@ -1,7 +1,7 @@
 FROM gitpod/workspace-full
 USER root
 RUN sudo apt-get update \
- && npm install -g generator-jhipster \
+ && sudo apt install -y git-flow \
     
  && sudo rm -rf /var/lib/apt/lists/*
 
