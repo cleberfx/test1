@@ -5,7 +5,7 @@ USER root
 RUN apt-get update \
     # window manager
     && apt-get install -y jwm \
-    && apt-get install -y git-flow \
+    && apt-get install git-flow \
     # electron
     && apt-get install -y libgtk-3-0 libnss3 libasound2 \
     # native-keymap
